@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | 黄华林的博客</title>
+  <title>作用域的销毁和内存释放 | 黄华林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="要学习更多的知识，做最好的自己">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄华林的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作用域的销毁和内存释放">
+<meta property="og:url" content="http://yoursite.com/2017/04/14/作用域的销毁和内存释放/index.html">
 <meta property="og:site_name" content="黄华林的博客">
-<meta property="og:description" content="要学习更多的知识，做最好的自己">
+<meta property="og:description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
+<meta property="og:updated_time" content="2017-04-14T08:07:19.209Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黄华林的博客">
-<meta name="twitter:description" content="要学习更多的知识，做最好的自己">
+<meta name="twitter:title" content="作用域的销毁和内存释放">
+<meta name="twitter:description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
   
     <link rel="alternative" href="/atom.xml" title="黄华林的博客" type="application/atom+xml">
   
@@ -144,157 +146,154 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-作用域的销毁和内存释放" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/this/" class="archive-article-date">
-  	<time datetime="2017-04-14T08:21:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/this/">this</a>
+    <h1 class="article-title" itemprop="name">
+      作用域的销毁和内存释放
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/原型/" class="archive-article-date">
-  	<time datetime="2017-04-14T08:08:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/原型/">js设计模式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/作用域的销毁和内存释放/" class="archive-article-date">
+        
+        <a href="/2017/04/14/作用域的销毁和内存释放/" class="archive-article-date">
   	<time datetime="2017-04-14T07:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/作用域的销毁和内存释放/">作用域的销毁和内存释放</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="作用域的销毁和内存释放"><a href="#作用域的销毁和内存释放" class="headerlink" title="作用域的销毁和内存释放"></a>作用域的销毁和内存释放</h1><pre><code>* 作用域销毁和内存释放问题
+* 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间
+* 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉
+* 3 函数运行之后留下来的返回值是一个函数，立刻又被执行一次，这样是不会被立刻释放掉的。
+</code></pre> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">     var obj = &#123;name:&apos;tianxi&apos;,age:30&#125;; //这个对象的堆内存地址只要被obj这个变量引用，这个堆内存就不会被释放;</div><div class="line">obj = null; //把一个空的指针赋值给obj，这样obj以前的堆内存就会被释放掉</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">    var num = 12;</div><div class="line">function fn()&#123; //fn在预解释的时候已经赋值一个堆内存</div><div class="line">    //var num = 100;</div><div class="line">    return function ()&#123; //仍然是一个引用类型，堆内存地址xxxfff111</div><div class="line">        var x;</div><div class="line">        console.log(num);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">var f = fn(); //是把fn运行留下来的结果赋值给f(并且我们发现return出来是一个函数,相当于把函数的引用地址赋值给f变量)，函数运行： 1 形参赋值 2 预解释  3 代码执行</div><div class="line">    //函数运行的时候开辟一个新的私有作用域</div><div class="line">f();</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> var oDiv = document.getElementById(&apos;div1&apos;); //通过dom获取，是一个dom对象</div><div class="line">console.dir(oDiv);//</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">(function (j)&#123;</div><div class="line">    oDiv[&apos;onclick&apos;] = function ()&#123;</div><div class="line">        console.log(&apos;点我a&apos;);</div><div class="line">        //</div><div class="line">        //oli[j]</div><div class="line">        //this</div><div class="line">    &#125;</div><div class="line">&#125;)(i);</div></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> function test()&#123;</div><div class="line">    return function ()&#123;</div><div class="line">        console.log(1);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">test()();</div></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/14/作用域的销毁和内存释放/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/预解释/" class="archive-article-date">
-  	<time datetime="2017-04-14T06:37:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/预解释/">预解释</a>
-    </h1>
+    <a href="/2017/04/14/预解释/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          预解释
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/14/原型/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js设计模式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2017-04-14T05:04:42.384Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -317,8 +316,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

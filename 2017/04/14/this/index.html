@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | 黄华林的博客</title>
+  <title>this | 黄华林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="要学习更多的知识，做最好的自己">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄华林的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="##his 我们主要研究的是函数里的this * 1元素绑定事件，当事件触发的时候，this就是事件触发时的元素 * 2this是谁跟函数在哪里定义和在哪里执行没关系，就看调用函数的主体是谁，其实也就是看函数执行的时候&amp;quot;.&amp;quot;前面是谁,this就是谁 * 3自执行函数的this是window，无论在哪都是window * 4在构造函数中的this是当前实例 * 5call和app">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="this">
+<meta property="og:url" content="http://yoursite.com/2017/04/14/this/index.html">
 <meta property="og:site_name" content="黄华林的博客">
-<meta property="og:description" content="要学习更多的知识，做最好的自己">
+<meta property="og:description" content="##his 我们主要研究的是函数里的this * 1元素绑定事件，当事件触发的时候，this就是事件触发时的元素 * 2this是谁跟函数在哪里定义和在哪里执行没关系，就看调用函数的主体是谁，其实也就是看函数执行的时候&amp;quot;.&amp;quot;前面是谁,this就是谁 * 3自执行函数的this是window，无论在哪都是window * 4在构造函数中的this是当前实例 * 5call和app">
+<meta property="og:updated_time" content="2017-04-14T08:25:35.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黄华林的博客">
-<meta name="twitter:description" content="要学习更多的知识，做最好的自己">
+<meta name="twitter:title" content="this">
+<meta name="twitter:description" content="##his 我们主要研究的是函数里的this * 1元素绑定事件，当事件触发的时候，this就是事件触发时的元素 * 2this是谁跟函数在哪里定义和在哪里执行没关系，就看调用函数的主体是谁，其实也就是看函数执行的时候&amp;quot;.&amp;quot;前面是谁,this就是谁 * 3自执行函数的this是window，无论在哪都是window * 4在构造函数中的this是当前实例 * 5call和app">
   
     <link rel="alternative" href="/atom.xml" title="黄华林的博客" type="application/atom+xml">
   
@@ -144,157 +146,148 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-this" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      this
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/this/" class="archive-article-date">
+
+        
+        <a href="/2017/04/14/this/" class="archive-article-date">
   	<time datetime="2017-04-14T08:21:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/this/">this</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##his 我们主要研究的是函数里的this</p>
+<pre><code>* 1元素绑定事件，当事件触发的时候，this就是事件触发时的元素
+* 2this是谁跟函数在哪里定义和在哪里执行没关系，就看调用函数的主体是谁，其实也就是看函数执行的时候&quot;.&quot;前面是谁,this就是谁
+* 3自执行函数的this是window，无论在哪都是window
+* 4在构造函数中的this是当前实例
+* 5call和apply都会强制改变this。
+</code></pre><p>   *<br><a id="more"></a></p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">console.log(this);</div><div class="line">	    /*document.getElementById(&apos;div1&apos;).onclick = function ()&#123;</div><div class="line">	        console.log(this);</div><div class="line">	    &#125;*/</div><div class="line">	    function fn()&#123; //这是函数的定义</div><div class="line">	        console.log(this);</div><div class="line">	    &#125;</div><div class="line">	    //window.fn(); //这才是函数的执行，点前面是window.所以this就是window</div><div class="line">	   /* var obj = &#123;</div><div class="line">	        fn : fn</div><div class="line">	    &#125;*/</div><div class="line">	    //obj.fn(); //</div><div class="line"></div><div class="line">   var fo = &#123;</div><div class="line">        x : function ()&#123;</div><div class="line">            console.log(this);</div><div class="line">            fn(); //this ==&gt; window</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">   fo.x(); //fo*/</div><div class="line"></div><div class="line">   var haha = &#123;</div><div class="line">       y : (function ()&#123;</div><div class="line">           console.log(this);</div><div class="line">           return function ()&#123;</div><div class="line">               console.log(this);</div><div class="line"></div><div class="line">           &#125;</div><div class="line">       &#125;)()</div><div class="line">   &#125;</div><div class="line">   haha.y();</div><div class="line">   ~function ()&#123;</div><div class="line">       console.log(this);</div><div class="line">       fn();</div><div class="line">   &#125;()*/</div><div class="line"></div><div class="line">   // 一个自定义类  构造函数</div><div class="line">   function FE()&#123;</div><div class="line">       //console.log(this);</div><div class="line">       this.x = &apos;ga&apos;;</div><div class="line">   &#125;</div><div class="line">   FE();//当成一个函数去运行</div><div class="line">   var ff = new FE(); //就把FE当成一个类去运行，而fe就是FE的一个实例</div><div class="line">   console.log(ff);</div></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/14/this/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/原型/" class="archive-article-date">
-  	<time datetime="2017-04-14T08:08:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/原型/">js设计模式</a>
-    </h1>
+    <a href="/2017/04/14/原型/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          js设计模式
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/作用域的销毁和内存释放/" class="archive-article-date">
-  	<time datetime="2017-04-14T07:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/作用域的销毁和内存释放/">作用域的销毁和内存释放</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/预解释/" class="archive-article-date">
-  	<time datetime="2017-04-14T06:37:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/预解释/">预解释</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2017-04-14T05:04:42.384Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -317,8 +310,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | 黄华林的博客</title>
+  <title>js设计模式 | 黄华林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="要学习更多的知识，做最好的自己">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄华林的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="##原型 prototype * 1当我们声明了一个函数(构造函数,类)的时候，天生自带了一个prototype的属性。并且这个prototype的值也是一个对象类型的。这个对象类型值也有一个天生自带的属性叫constructor并且这个属性的值是函数(构造函数，类)本身 * 2这个类的实例也会有一个叫做__proto__的天生自带的属性,并且这个属性的值也是一个对象类型的。这个值是这个实例所属类">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js设计模式">
+<meta property="og:url" content="http://yoursite.com/2017/04/14/原型/index.html">
 <meta property="og:site_name" content="黄华林的博客">
-<meta property="og:description" content="要学习更多的知识，做最好的自己">
+<meta property="og:description" content="##原型 prototype * 1当我们声明了一个函数(构造函数,类)的时候，天生自带了一个prototype的属性。并且这个prototype的值也是一个对象类型的。这个对象类型值也有一个天生自带的属性叫constructor并且这个属性的值是函数(构造函数，类)本身 * 2这个类的实例也会有一个叫做__proto__的天生自带的属性,并且这个属性的值也是一个对象类型的。这个值是这个实例所属类">
+<meta property="og:updated_time" content="2017-04-14T08:27:04.066Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="黄华林的博客">
-<meta name="twitter:description" content="要学习更多的知识，做最好的自己">
+<meta name="twitter:title" content="js设计模式">
+<meta name="twitter:description" content="##原型 prototype * 1当我们声明了一个函数(构造函数,类)的时候，天生自带了一个prototype的属性。并且这个prototype的值也是一个对象类型的。这个对象类型值也有一个天生自带的属性叫constructor并且这个属性的值是函数(构造函数，类)本身 * 2这个类的实例也会有一个叫做__proto__的天生自带的属性,并且这个属性的值也是一个对象类型的。这个值是这个实例所属类">
   
     <link rel="alternative" href="/atom.xml" title="黄华林的博客" type="application/atom+xml">
   
@@ -144,157 +146,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-原型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/this/" class="archive-article-date">
-  	<time datetime="2017-04-14T08:21:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/this/">this</a>
+    <h1 class="article-title" itemprop="name">
+      js设计模式
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/原型/" class="archive-article-date">
+        
+        <a href="/2017/04/14/原型/" class="archive-article-date">
   	<time datetime="2017-04-14T08:08:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/原型/">js设计模式</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##原型 prototype</p>
+<pre><code>* 1当我们声明了一个函数(构造函数,类)的时候，天生自带了一个prototype的属性。并且这个prototype的值也是一个对象类型的。这个对象类型值也有一个天生自带的属性叫constructor并且这个属性的值是函数(构造函数，类)本身
+* 2这个类的实例也会有一个叫做__proto__的天生自带的属性,并且这个属性的值也是一个对象类型的。这个值是这个实例所属类的原型.
+* 3每一个引用类型都有一个天生自带的属性叫__proto__,所以说我们的prototype的值也有天生自带一个__proto__的属性。并且这个属性的值也是一个对象类型，一直到我们的基类Object
+* 4通过类的原型添加的属性和方法都是公有的，每个实例都会自带
+* 5一个实例的方法在运行的时候，如果这个方法是自己私有的，那么就直接用，如果不是私有的，那么通过__proto__去所属类的原型上去查找，如果还没有就通过原型的__proto__一直查到基类的Object.如果还没有报错，如果有就直接用了。我们把这种通过__proto__查找的机制叫做原型链.
+</code></pre><p>   *<br><a id="more"></a></p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">*原型模式*</div><div class="line"></div><div class="line">   function FE()&#123; </div><div class="line">       this.x = 100;</div><div class="line">       this.y = 200;</div><div class="line">   &#125;</div><div class="line">   FE.prototype.code = function ()&#123; //在FE的原型上添加了一个code属性，属性值是一个函数</div><div class="line">       //console.log(&apos;我是通过原型添加的&apos;)</div><div class="line">       //console.log(this.x);</div><div class="line">   &#125;</div><div class="line">   //console.dir(FE);</div><div class="line">   //var fe1 = new FE();</div><div class="line">   //fe1.code();  //说明成功添加了一个code的属性</div><div class="line">   //console.dir(fe1);</div><div class="line">   var fe2 = new FE();</div><div class="line">   //fe2.code(); //fe2.x</div><div class="line"></div><div class="line">fe2.__proto__.codeing = function ()&#123;</div><div class="line">       //alert(&apos;gaga&apos;);</div><div class="line">&#125;</div><div class="line">//fe2.codeing();//?????</div><div class="line">var fe3 = new FE();</div><div class="line">//fe3.codeing();</div><div class="line"></div><div class="line">//fe3.codeing = function ()&#123;</div><div class="line">    //alert(&apos;fe3&apos;);</div><div class="line">//&#125;</div><div class="line">//console.log(fe2.codeing()); //??</div><div class="line">//console.dir(fe3);</div><div class="line">//fe3.__proto__.__proto__ == Object.prototype</div><div class="line"> for(var attr in fe3)&#123;</div><div class="line">     if(fe3.hasOwnProperty(attr))&#123;</div><div class="line">         console.log(attr);</div><div class="line">     &#125;</div><div class="line"> &#125;</div><div class="line">*批量设置共有的属性和方法</div><div class="line">  function Girl()&#123;</div><div class="line">  &#125;</div><div class="line">  Girl.prototype = &#123; //用一个新的对象把原来的原型的地址替换了</div><div class="line">      constructor : Girl,</div><div class="line">       a : function ()&#123;&#125;,</div><div class="line">       b : function ()&#123;&#125;,</div><div class="line">       c : function ()&#123;&#125;</div><div class="line">       /*push:...*/</div><div class="line">   &#125;</div><div class="line">   Girl.prototype.a</div><div class="line">   Girl.prototype.b</div><div class="line">   Girl.prototype.c</div></pre></td></tr></table></figure>
+<hr>
+<p>####单例模式: 就是一个破对象， 也是命名空间模式。(namespace)是js编程中最常用的模块化（？？）开发模式,在工作过程中也会经常看到.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">function Table() &#123; //用function的方式去创建一个人为的一个类</div><div class="line">   &#125;</div><div class="line">   var table1 = new Table(); //用实例创建的方式，创建了一个具体化的类也就是一个shi&apos;li</div><div class="line">   var person = &#123; //我自己</div><div class="line">       name : &apos;tianxi&apos;,</div><div class="line">       age : 30,</div><div class="line">       height : &apos;175cm&apos;,</div><div class="line">       weight : &apos;90kg&apos;,</div><div class="line">       code : function ()&#123;</div><div class="line">           //我有一个写代码的功能</div><div class="line">       &#125;,</div><div class="line">       change : function ()&#123;</div><div class="line"></div><div class="line">       &#125;,</div><div class="line">       utils:&#123;</div><div class="line"></div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   var person2  = &#123;</div><div class="line">       name : &apos;youcheng&apos;,</div><div class="line">       height : &apos;180cm&apos;,</div><div class="line">       wirteJs : function ()&#123;</div><div class="line">           //这个方法是youcheng的，但是我不一定会</div><div class="line">       &#125;,</div><div class="line">       change: function ()&#123;</div><div class="line"></div><div class="line">       &#125;</div><div class="line"></div><div class="line">   &#125;</div><div class="line"></div><div class="line">   var Tx = &#123;</div><div class="line">       change: function ()&#123;&#125;</div><div class="line">   &#125;</div><div class="line">   var zy = &#123;</div><div class="line">       change : function ()&#123;&#125;</div><div class="line">   &#125;</div><div class="line">   //person.code();</div><div class="line">   //person2.writeJs();</div><div class="line">   console.log(person);</div></pre></td></tr></table></figure></p>
+<p>####工厂模式: 解决不能批量生产，它是一个破函数,把实现相同功能的属性拿出来放到一个函数里了，我们把这种方式也叫函数的封装。但是工厂模式不能解决实例识别的问题</p>
+<p>####面向对象：函数的封装，继承（子类继承父类的方法和属性等,祖传），多态:包括重载和重写，js中只有重写，但是却可以模拟重载.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">function table()&#123; //我们的车床</div><div class="line">       var obj = &#123;&#125;;</div><div class="line">       obj.width = 200;</div><div class="line">       obj.height = 300;</div><div class="line">       obj.fn = function ()&#123;</div><div class="line">           //桌子能干啥，我也不知道</div><div class="line">       &#125;</div><div class="line">       return obj;</div><div class="line">   &#125;</div><div class="line">   var tab1 = table(); //相当于车床通电运行一次就给我造一个桌子,是不是要给我留下东西呀</div><div class="line">   tab1.fn2 = function ()&#123;</div><div class="line">       //烧火吧</div><div class="line">   &#125;</div><div class="line">   var tab2 = table(); //</div><div class="line"></div><div class="line">   //new table();</div><div class="line">   (&#123;&#125;).toString == &apos;[object Object]&apos;; //分别代表的是数据类型和所属的类</div><div class="line">   [].toString == &quot;&quot;;</div><div class="line">   //[1,2,3].toString() = &apos;1,2,3&apos; //在定义数组的toString方法的时候被重写了</div></pre></td></tr></table></figure></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/14/原型/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/作用域的销毁和内存释放/" class="archive-article-date">
-  	<time datetime="2017-04-14T07:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/作用域的销毁和内存释放/">作用域的销毁和内存释放</a>
-    </h1>
+    <a href="/2017/04/14/作用域的销毁和内存释放/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          作用域的销毁和内存释放
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/14/this/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">this</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/预解释/" class="archive-article-date">
-  	<time datetime="2017-04-14T06:37:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/预解释/">预解释</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/14/hello-world/" class="archive-article-date">
-  	<time datetime="2017-04-14T05:04:42.384Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -317,8 +321,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
