@@ -9,13 +9,13 @@
   <title>作用域的销毁和内存释放 | 黄华林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
-<meta name="keywords">
+<meta name="keywords" content="技术,js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="作用域的销毁和内存释放">
 <meta property="og:url" content="http://yoursite.com/2017/04/14/作用域的销毁和内存释放/index.html">
 <meta property="og:site_name" content="黄华林的博客">
 <meta property="og:description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
-<meta property="og:updated_time" content="2017-04-14T08:07:19.209Z">
+<meta property="og:updated_time" content="2017-04-14T10:27:45.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="作用域的销毁和内存释放">
 <meta name="twitter:description" content="作用域的销毁和内存释放* 作用域销毁和内存释放问题 * 1如果让一个堆内存释放掉那么就让这个堆内存没有被其他变量引用，如果函数在执行的后，函数体内的某一部分被函数体外占用，那么我们运行后返回的堆内存和运行时产生的作用域（栈内存）都不会被释放掉.如果没有被占用，浏览器会主动回收内存空间 * 2 函数运行的时候，在函数体内定义的匿名函数赋值给函数体外的dom元素的事件属性，内存也不会被释放掉 * 3">
@@ -59,9 +59,7 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/我的个人主页">主页</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="https://loveyou1314.github.io/">主页</a></li>
 	        
 			</ul>
 		</nav>
@@ -69,10 +67,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -84,6 +78,8 @@
 			<div class="social">
 				
 					<a class="github" target="_blank" href="https://github.com/loveyou1314" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="mail" target="_blank" href="mailto:13480927112@163.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -113,14 +109,14 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/loveyou1314" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:13480927112@163.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -129,9 +125,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/我的个人主页">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 100%"><a href="https://loveyou1314.github.io/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -203,7 +197,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/编程/" class="article-tag-list-link color3">编程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -277,8 +297,8 @@
     </a>
   
   
-    <a href="/2017/04/14/原型/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js设计模式</div>
+    <a href="/2017/04/14/基本数据类型跟引用数据类型/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">作用域的销毁和内存释放</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -290,7 +310,25 @@
 
 
   
-    <div class="duoshuo"></div>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="作用域的销毁和内存释放" data-title="作用域的销毁和内存释放" data-url="http://yoursite.com/2017/04/14/作用域的销毁和内存释放/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
 
@@ -323,7 +361,7 @@
 		open_in_new: false,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -364,25 +402,17 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -401,6 +431,26 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">黑魔法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">奇淫技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">technology</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -446,43 +496,11 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">爱玩爱闹&lt;br&gt;能宅能动&lt;br&gt;爱生活更爱自己</div>
   	  	
     	</section>
     
